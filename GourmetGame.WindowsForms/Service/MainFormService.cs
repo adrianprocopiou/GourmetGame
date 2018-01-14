@@ -24,38 +24,35 @@ namespace GourmetGame.WindowsForms.Service
             ProccessCategories(categories.ToList());
         }
 
-        private void ProccessCategories(ICollection<CategoryViewModel> categories)
+        private bool ProccessCategories(ICollection<CategoryViewModel> categories)
         {
             foreach (var category in categories)
             {
-                if (ProccessCategory(category))
-                {
-                    ProccessCategories(category.SubCategories);
-                }
-                else
+                if (!ProccessCategory(category)) continue;
+
+                if (!ProccessCategories(category.SubCategories))
                 {
                     ProccessDishies(category.Dish);
                 }
+
+                return true;
             }
+
+            return false;
         }
 
-        private void ProccessDishies(List<DishViewModel> dishies)
+        private void ProccessDishies(DishViewModel dishies)
         {
-            foreach (var dish in dishies)
-            {
-                var questionResult = _messageService.ShowAUserQuestion(dish.Name);
-                if (questionResult == DialogResult.Yes)
-                    break;
-            }
+            var quetionResult = _messageService.ShowAUserQuestion(dishies.Name);
+            if (quetionResult == DialogResult.No)
+                _messageService.ShowAUserInfo("Novo");
+            else
+                _messageService.ShowAUserInfo("Acertei de novo");
         }
 
         private bool ProccessCategory(CategoryViewModel category)
         {
-            var questionResult = _messageService.ShowAUserQuestion(category.Name);
-
-            if (questionResult == DialogResult.No) return false;
-
-            return true;
+            return _messageService.ShowAUserQuestion(category.Name) == DialogResult.Yes;
         }
     }
 }

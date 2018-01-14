@@ -5,5 +5,6 @@ namespace GourmetGame.WindowsForms.Service.Interface
     public interface IUserDisplayMessageService
     {
         DialogResult ShowAUserQuestion(string question);
+        DialogResult ShowAUserInfo(string info);
     }
 }

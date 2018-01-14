@@ -35,25 +35,42 @@ namespace GourmetGame.Data.Database
                     Name = "massa",
                     SubCategories = new List<Category>
                     {
-                        new Category()
+                        new Category
                         {
                             Name = "Fria",
-                            Dish = new List<Dish>
+                            Dish = new Dish
                             {
-                                new Dish()
-                                {
-                                    Name = "Sorvete"
-                                }
+                                Name = "Sorvete"
                             }
                         }
                     },
-                    Dish = new List<Dish>
-                    {
+                    Dish =
                         new Dish
                         {
                             Name = "Lasanha"
                         }
-                    }
+                }
+            );
+
+            Category.Add(new Category
+                {
+                    Name = "salada",
+                    SubCategories = new List<Category>
+                    {
+                        new Category
+                        {
+                            Name = "vermelho",
+                            Dish = new Dish
+                            {
+                                Name = "Tomate"
+                            }
+                        }
+                    },
+                    Dish =
+                        new Dish
+                        {
+                            Name = "Alface"
+                        }
                 }
             );
         }

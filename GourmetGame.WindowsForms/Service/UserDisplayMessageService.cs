@@ -9,5 +9,10 @@ namespace GourmetGame.WindowsForms.Service
         {
             return MessageBox.Show(question, Properties.Resources.TitleMessageBox, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
         }
+
+        public DialogResult ShowAUserInfo(string info)
+        {
+            return MessageBox.Show(info, Properties.Resources.TitleMessageBox, MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }
