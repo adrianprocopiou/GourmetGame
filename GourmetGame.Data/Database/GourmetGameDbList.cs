@@ -10,18 +10,19 @@ namespace GourmetGame.Data.Database
     {
         public GourmetGameDbList()
         {
-            Categorie = new List<Category>();
+            Category = new List<Category>();
             Dish = new List<Dish>();
             PopulateWithSeedData();
         }
 
-        public ICollection<Category> Categorie { get; set; }
+        public ICollection<Category> Category { get; set; }
         public ICollection<Dish> Dish { get; set; }
 
         public ICollection<T> Collection<T>() where T : Entity
         {
+            var p = typeof(T);
             var type = typeof(GourmetGameDbList);
-            var property = type.GetProperties().FirstOrDefault(x => x.PropertyType == typeof(T));
+            var property = type.GetProperties().FirstOrDefault(x => x.Name == p.Name);
             if (property == null)
                 throw new ArgumentException("Invalid Entity for the database");
             return (ICollection<T>) property.GetValue(this);
@@ -29,7 +30,7 @@ namespace GourmetGame.Data.Database
 
         private void PopulateWithSeedData()
         {
-            Categorie.Add(new Category
+            Category.Add(new Category
                 {
                     Name = "massa",
                     Dish = new List<Dish>

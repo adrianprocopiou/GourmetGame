@@ -50,6 +50,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\GourmetGame.Application\GourmetGame.Application.csproj">
+      <Project>{5C7911D7-C399-491D-AAC3-E93ABE952690}</Project>
+      <Name>GourmetGame.Application</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GourmetGame.Data\GourmetGame.Data.csproj">
       <Project>{f3d8f57e-8531-41b4-943a-32efbc117da9}</Project>
       <Name>GourmetGame.Data</Name>

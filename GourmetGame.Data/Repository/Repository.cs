@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using GourmetGame.Data.Database;
 using GourmetGame.Data.Database.Interface;
 using GourmetGame.Domain.Entities;
 using GourmetGame.Domain.Repository.Interface;
@@ -13,7 +14,7 @@ namespace GourmetGame.Data.Repository
         private readonly IGourmetGameDb db;
         public Repository()
         {
-            db = ServiceLocator.Current.GetInstance<IGourmetGameDb>();
+            db = IoC.IoCManager.Container.GetInstance<IGourmetGameDb>();
             _dbSet = db.Collection<T>();
         }
 

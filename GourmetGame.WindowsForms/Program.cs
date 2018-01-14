@@ -16,7 +16,10 @@ namespace GourmetGame.WindowsForms
         [STAThread]
         static void Main()
         {
-            _container = IoCManager.RegisterModules();
+            _container = IoCManager.GetContainer();
+            _container.Register<MainForm>();
+
+            Application.AutoMapperConfig.AutoMapperConfig.RegisterMapping();
 
             // Set the aplication to use portuguese culture
             LanguageService.SetCulture(AvailableCulture.Portuguese);
@@ -24,7 +27,7 @@ namespace GourmetGame.WindowsForms
             System.Windows.Forms.Application.EnableVisualStyles();
             System.Windows.Forms.Application.SetCompatibleTextRenderingDefault(false);
             System.Windows.Forms.Application.Run(_container.GetInstance<MainForm>());
-            Application.AutoMapperConfig.AutoMapperConfig.RegisterMapping();
+            
             
         }
     }

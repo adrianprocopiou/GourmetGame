@@ -1,27 +1,18 @@
-﻿using GourmetGame.Data.Database;
-using GourmetGame.Data.Database.Interface;
-using GourmetGame.Data.Repository;
-using GourmetGame.Domain.Repository.Interface;
-using GourmetGame.Domain.Service;
-using GourmetGame.Domain.Service.Interfaces;
-using SimpleInjector;
+﻿using SimpleInjector;
 
 namespace GourmetGame.IoC
 {
     public static class IoCManager
     {
-        public static Container RegisterModules()
+        private static Container container;
+        public static Container GetContainer()
         {
-            var container = new Container();
+            if (container != null) return container;
 
-            container.Register<IGourmetGameDb, GourmetGameDbList>(Lifestyle.Singleton);
-
-            container.Register<ICategoryRepository, CategoryRepository>();
-            container.Register<ICategoryService,CategoryService>();
-
-            container.Register<IDishRepository, DishRepository>();
-            container.Register<IDishService, DishService>();
-
+            container = new Container();
+            
+            Data.IoC.IoCManager.RegisterModules(container);
+            Application.IoC.IoCManager.RegisterModules(container);
 
             return container;
         }

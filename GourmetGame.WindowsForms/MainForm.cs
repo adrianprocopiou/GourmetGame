@@ -7,19 +7,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GourmetGame.Application.Service.Interface;
+using GourmetGame.Application.ViewModel;
 
 namespace GourmetGame.WindowsForms
 {
     public partial class MainForm : Form
     {
-        public MainForm()
+        private readonly ICategoryAppService _categoryAppService;
+        public MainForm(ICategoryAppService categoryAppService)
         {
+            _categoryAppService = categoryAppService;
             InitializeComponent();
         }
 
         private void buttonOk_Click(object sender, EventArgs e)
         {
-            
+            var a = _categoryAppService.GetAll();
+            _categoryAppService.Add(new CategoryViewModel(){Name = "João"});
+            var b = _categoryAppService.GetAll();
         }
 
         private void radioButtonEnglish_CheckedChanged(object sender, EventArgs e)
