@@ -4,6 +4,5 @@ namespace GourmetGame.Domain.Service.Interfaces
 {
     public interface ICategoryService : IService<Category>
     {
-        
     }
 }

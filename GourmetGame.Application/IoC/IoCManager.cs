@@ -7,6 +7,7 @@ namespace GourmetGame.Application.IoC
     public static class IoCManager
     {
         public static Container Container { get; private set; }
+
         public static void RegisterModules(Container container)
         {
             Container = container;

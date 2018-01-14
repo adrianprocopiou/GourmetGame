@@ -24,7 +24,6 @@ namespace GourmetGame.WindowsForms
 
     public static class LanguageService
     {
-
         private static void ChangeCulture(string culture)
         {
             Thread.CurrentThread.CurrentCulture = new CultureInfo(culture);
@@ -62,7 +61,7 @@ namespace GourmetGame.WindowsForms
         }
 
         /// <summary>
-        ///     Refresh <paramref name="form"/> and all controls with current culture
+        ///     Refresh <paramref name="form" /> and all controls with current culture
         /// </summary>
         /// <param name="form">Form to be refreshed with current culture</param>
         public static void UpdateFormWithCurrentCulture(Form form)

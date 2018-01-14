@@ -2,8 +2,7 @@
 
 namespace GourmetGame.Application.Service.Interface
 {
-    public interface IDishAppService: IAppService<DishViewModel>
+    public interface IDishAppService : IAppService<DishViewModel>
     {
-        
     }
 }

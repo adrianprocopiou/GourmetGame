@@ -1,25 +1,25 @@
 ﻿using System;
+using GourmetGame.Application.AutoMapperConfig;
 using GourmetGame.IoC;
 using SimpleInjector;
 
 namespace GourmetGame.WindowsForms
 {
-    static class Program
+    internal static class Program
     {
-
         // Container for IoC and DI
         private static Container _container;
 
         /// <summary>
-        /// The main entry point for the application.
+        ///     The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
+        private static void Main()
         {
             _container = IoCManager.GetContainer();
             _container.Register<MainForm>();
 
-            Application.AutoMapperConfig.AutoMapperConfig.RegisterMapping();
+            AutoMapperConfig.RegisterMapping();
 
             // Set the aplication to use portuguese culture
             LanguageService.SetCulture(AvailableCulture.Portuguese);
@@ -27,8 +27,6 @@ namespace GourmetGame.WindowsForms
             System.Windows.Forms.Application.EnableVisualStyles();
             System.Windows.Forms.Application.SetCompatibleTextRenderingDefault(false);
             System.Windows.Forms.Application.Run(_container.GetInstance<MainForm>());
-            
-            
         }
     }
 }

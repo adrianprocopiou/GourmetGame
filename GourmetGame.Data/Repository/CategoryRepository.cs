@@ -5,6 +5,5 @@ namespace GourmetGame.Data.Repository
 {
     public class CategoryRepository : Repository<Category>, ICategoryRepository
     {
-        
     }
 }
