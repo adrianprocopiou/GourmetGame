@@ -41,9 +41,9 @@
             // 
             // groupBoxLanguage
             // 
-            resources.ApplyResources(this.groupBoxLanguage, "groupBoxLanguage");
             this.groupBoxLanguage.Controls.Add(this.radioButtonEnglish);
             this.groupBoxLanguage.Controls.Add(this.radioButtonPortuguese);
+            resources.ApplyResources(this.groupBoxLanguage, "groupBoxLanguage");
             this.groupBoxLanguage.Name = "groupBoxLanguage";
             this.groupBoxLanguage.TabStop = false;
             // 
@@ -70,8 +70,8 @@
             // 
             // groupBoxIntroduction
             // 
-            resources.ApplyResources(this.groupBoxIntroduction, "groupBoxIntroduction");
             this.groupBoxIntroduction.Controls.Add(this.labelIntroduction);
+            resources.ApplyResources(this.groupBoxIntroduction, "groupBoxIntroduction");
             this.groupBoxIntroduction.Name = "groupBoxIntroduction";
             this.groupBoxIntroduction.TabStop = false;
             // 
