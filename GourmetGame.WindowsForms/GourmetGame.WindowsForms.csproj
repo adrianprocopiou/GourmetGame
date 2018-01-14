@@ -48,6 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InputDialogBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputDialogBox.Designer.cs">
+      <DependentUpon>InputDialogBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="IoC\IoCManager.cs" />
     <Compile Include="LanguageService.cs" />
     <Compile Include="MainForm.cs">
@@ -62,6 +68,12 @@
     <Compile Include="Service\Interface\IUserDisplayMessageService.cs" />
     <Compile Include="Service\MainFormService.cs" />
     <Compile Include="Service\UserDisplayMessageService.cs" />
+    <EmbeddedResource Include="InputDialogBox.en-US.resx">
+      <DependentUpon>InputDialogBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputDialogBox.resx">
+      <DependentUpon>InputDialogBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.en-US.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>

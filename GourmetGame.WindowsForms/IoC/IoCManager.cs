@@ -9,6 +9,8 @@ namespace GourmetGame.WindowsForms.IoC
         public static void RegisterModules(Container container)
         {
             container.Register<MainForm>();
+            container.Register<InputDialogBox>();
+
             container.Register<IMainFormService,MainFormService>();
             container.Register<IUserDisplayMessageService, UserDisplayMessageService>();
         }

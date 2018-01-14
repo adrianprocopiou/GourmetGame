@@ -45,7 +45,7 @@ namespace GourmetGame.WindowsForms.Service
         {
             var quetionResult = _messageService.ShowAUserQuestion(string.Format(Properties.Resources.CategoryUserMessage,dishies.Name));
             if (quetionResult == DialogResult.No)
-                _messageService.ShowAUserInfo("Novo");
+                _messageService.ShowAUserInfo(_messageService.GetUserInput(Properties.Resources.DishUserImputCaption));
             else
                 _messageService.ShowAUserInfo(Properties.Resources.SuccessUserMessage);
            

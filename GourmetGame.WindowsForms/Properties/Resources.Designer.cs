@@ -70,6 +70,15 @@ namespace GourmetGame.WindowsForms.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Qual prato você pensou?.
+        /// </summary>
+        internal static string DishUserImputCaption {
+            get {
+                return ResourceManager.GetString("DishUserImputCaption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Acertei de novo!.
         /// </summary>
         internal static string SuccessUserMessage {

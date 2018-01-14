@@ -121,6 +121,9 @@
     <value>The dish are you think is {0} ?</value>
     <comment>0 is the category or dish name</comment>
   </data>
+  <data name="DishUserImputCaption" xml:space="preserve">
+    <value>What dish did you think?</value>
+  </data>
   <data name="SuccessUserMessage" xml:space="preserve">
     <value>I hit again!</value>
   </data>

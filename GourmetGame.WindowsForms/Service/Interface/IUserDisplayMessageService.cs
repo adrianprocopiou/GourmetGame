@@ -6,5 +6,6 @@ namespace GourmetGame.WindowsForms.Service.Interface
     {
         DialogResult ShowAUserQuestion(string question);
         DialogResult ShowAUserInfo(string info);
+        string GetUserInput(string caption);
     }
 }
