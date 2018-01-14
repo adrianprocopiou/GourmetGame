@@ -2,18 +2,20 @@
 
 namespace GourmetGame.WindowsForms
 {
-    public partial class InputDialogBox : Form
+    public partial class InputDialogBox : Form, IInputDialogBox
     {
         public InputDialogBox()
         {
             InitializeComponent();
-            buttonOk.Click += (sender, e) => { this.Close(); };
+            AcceptButton = buttonOk;
+            CancelButton = buttonCancel;
         }
 
         public string ShowInputDialog(string caption)
         {
+            textBoxInputUser.Text = string.Empty;
             labelMessage.Text = caption;
-            return this.ShowDialog() == DialogResult.OK? textBoxInputUser.Text : "";
+            return this.ShowDialog() == DialogResult.OK? textBoxInputUser.Text : string.Empty;
         }
     }
 }

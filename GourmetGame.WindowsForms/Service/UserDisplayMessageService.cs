@@ -1,12 +1,11 @@
 ﻿using System.Windows.Forms;
-using GourmetGame.WindowsForms.IoC;
 using GourmetGame.WindowsForms.Service.Interface;
 
 namespace GourmetGame.WindowsForms.Service
 {
     public class UserDisplayMessageService : IUserDisplayMessageService
     {
-        private readonly InputDialogBox _inputDialogBox;
+        private readonly IInputDialogBox _inputDialogBox;
 
         public UserDisplayMessageService(InputDialogBox inputDialogBox)
         {
