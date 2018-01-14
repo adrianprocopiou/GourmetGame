@@ -43,16 +43,18 @@ namespace GourmetGame.WindowsForms.Service
 
         private void ProccessDishies(DishViewModel dishies)
         {
-            var quetionResult = _messageService.ShowAUserQuestion(dishies.Name);
+            var quetionResult = _messageService.ShowAUserQuestion(string.Format(Properties.Resources.CategoryUserMessage,dishies.Name));
             if (quetionResult == DialogResult.No)
                 _messageService.ShowAUserInfo("Novo");
             else
-                _messageService.ShowAUserInfo("Acertei de novo");
+                _messageService.ShowAUserInfo(Properties.Resources.SuccessUserMessage);
+           
+
         }
 
         private bool ProccessCategory(CategoryViewModel category)
         {
-            return _messageService.ShowAUserQuestion(category.Name) == DialogResult.Yes;
+            return _messageService.ShowAUserQuestion(string.Format(Properties.Resources.CategoryUserMessage,category.Name)) == DialogResult.Yes;
         }
     }
 }

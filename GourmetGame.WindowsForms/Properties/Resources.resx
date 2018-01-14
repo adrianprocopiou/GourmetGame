@@ -117,6 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="CategoryUserMessage" xml:space="preserve">
+    <value>O prato que você pensou é {0} ?</value>
+    <comment>0 é o nome da categoria ou do prato</comment>
+  </data>
+  <data name="SuccessUserMessage" xml:space="preserve">
+    <value>Acertei de novo!</value>
+  </data>
   <data name="TitleMessageBox" xml:space="preserve">
     <value>Jogo Gourmet</value>
   </data>

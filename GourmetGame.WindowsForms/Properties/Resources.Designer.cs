@@ -61,6 +61,24 @@ namespace GourmetGame.WindowsForms.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to O prato que você pensou é {0} ?.
+        /// </summary>
+        internal static string CategoryUserMessage {
+            get {
+                return ResourceManager.GetString("CategoryUserMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Acertei de novo!.
+        /// </summary>
+        internal static string SuccessUserMessage {
+            get {
+                return ResourceManager.GetString("SuccessUserMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Jogo Gourmet.
         /// </summary>
         internal static string TitleMessageBox {
