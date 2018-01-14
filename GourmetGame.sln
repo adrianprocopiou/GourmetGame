@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GourmetGame.WindowsForms", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GourmetGame.Domain", "GourmetGame.Domain\GourmetGame.Domain.csproj", "{416F93EF-0CBA-4969-A123-EB06D7DE13B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GourmetGame.Data", "GourmetGame.Data\GourmetGame.Data.csproj", "{F3D8F57E-8531-41B4-943A-32EFBC117DA9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{416F93EF-0CBA-4969-A123-EB06D7DE13B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{416F93EF-0CBA-4969-A123-EB06D7DE13B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{416F93EF-0CBA-4969-A123-EB06D7DE13B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3D8F57E-8531-41B4-943A-32EFBC117DA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3D8F57E-8531-41B4-943A-32EFBC117DA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3D8F57E-8531-41B4-943A-32EFBC117DA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3D8F57E-8531-41B4-943A-32EFBC117DA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
