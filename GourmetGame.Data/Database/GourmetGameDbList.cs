@@ -20,9 +20,9 @@ namespace GourmetGame.Data.Database
 
         public ICollection<T> Collection<T>() where T : Entity
         {
-            var p = typeof(T);
+            var typeT = typeof(T);
             var type = typeof(GourmetGameDbList);
-            var property = type.GetProperties().FirstOrDefault(x => x.Name == p.Name);
+            var property = type.GetProperties().FirstOrDefault(x => x.Name == typeT.Name);
             if (property == null)
                 throw new ArgumentException("Invalid Entity for the database");
             return (ICollection<T>) property.GetValue(this);

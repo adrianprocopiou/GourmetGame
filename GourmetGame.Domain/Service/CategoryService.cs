@@ -9,5 +9,11 @@ namespace GourmetGame.Domain.Service
         public CategoryService(ICategoryRepository categoryRepository) : base(categoryRepository)
         {
         }
+
+        public override void Add(Category obj)
+        {
+            if (!Any(x => x.Name == obj.Name))
+                base.Add(obj);
+        }
     }
 }

@@ -1,4 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
 using GourmetGame.Data.Database.Interface;
 using GourmetGame.Data.IoC;
 using GourmetGame.Domain.Entities;
@@ -25,6 +28,11 @@ namespace GourmetGame.Data.Repository
         public IEnumerable<T> GetAll()
         {
             return _dbSet;
+        }
+
+        public bool Any(Expression<Func<T, bool>> filter)
+        {
+            return _dbSet.AsQueryable().Any(filter);
         }
     }
 }

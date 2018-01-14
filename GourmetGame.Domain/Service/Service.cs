@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
 using GourmetGame.Domain.Entities;
 using GourmetGame.Domain.Repository.Interface;
 using GourmetGame.Domain.Service.Interfaces;
@@ -14,7 +16,7 @@ namespace GourmetGame.Domain.Service
             _repository = repository;
         }
 
-        public void Add(T obj)
+        public virtual void Add(T obj)
         {
             _repository.Add(obj);
         }
@@ -22,6 +24,11 @@ namespace GourmetGame.Domain.Service
         public IEnumerable<T> GetAll()
         {
             return _repository.GetAll();
+        }
+
+        public bool Any(Expression<Func<T, bool>> filter)
+        {
+            return _repository.Any(filter);
         }
     }
 }
