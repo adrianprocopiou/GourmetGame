@@ -9,6 +9,6 @@ namespace GourmetGame.Domain.Entities
             Id = new Guid();
         }
 
-        public Guid Id { get; }
+        public Guid Id { get; protected set; }
     }
 }
