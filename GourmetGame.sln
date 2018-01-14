@@ -9,6 +9,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GourmetGame.Domain", "Gourm
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GourmetGame.Data", "GourmetGame.Data\GourmetGame.Data.csproj", "{F3D8F57E-8531-41B4-943A-32EFBC117DA9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GourmetGame.IoC", "GourmetGame.IoC\GourmetGame.IoC.csproj", "{25878C8D-00F3-4255-B95F-90BDD4281B30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GourmetGame.Application", "GourmetGame.Application\GourmetGame.Application.csproj", "{5C7911D7-C399-491D-AAC3-E93ABE952690}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Presentation", "0 - Presentation", "{3E50669F-2007-4D72-BF72-1899F328F824}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Application", "1 - Application", "{A8271300-5B54-4293-9F59-2171CD766748}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Domain", "2 - Domain", "{44724DF6-1167-4052-AD02-672F1A73B197}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Infra", "3 - Infra", "{DA8A83D3-D193-4BA6-9CF0-AD425AAEFAC7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,9 +39,24 @@ Global
 		{F3D8F57E-8531-41B4-943A-32EFBC117DA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3D8F57E-8531-41B4-943A-32EFBC117DA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3D8F57E-8531-41B4-943A-32EFBC117DA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25878C8D-00F3-4255-B95F-90BDD4281B30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25878C8D-00F3-4255-B95F-90BDD4281B30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25878C8D-00F3-4255-B95F-90BDD4281B30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25878C8D-00F3-4255-B95F-90BDD4281B30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C7911D7-C399-491D-AAC3-E93ABE952690}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C7911D7-C399-491D-AAC3-E93ABE952690}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C7911D7-C399-491D-AAC3-E93ABE952690}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C7911D7-C399-491D-AAC3-E93ABE952690}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2903748C-23F5-47A5-970C-D96C64E6C2DC} = {3E50669F-2007-4D72-BF72-1899F328F824}
+		{416F93EF-0CBA-4969-A123-EB06D7DE13B4} = {44724DF6-1167-4052-AD02-672F1A73B197}
+		{F3D8F57E-8531-41B4-943A-32EFBC117DA9} = {DA8A83D3-D193-4BA6-9CF0-AD425AAEFAC7}
+		{25878C8D-00F3-4255-B95F-90BDD4281B30} = {DA8A83D3-D193-4BA6-9CF0-AD425AAEFAC7}
+		{5C7911D7-C399-491D-AAC3-E93ABE952690} = {A8271300-5B54-4293-9F59-2171CD766748}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {67EF82E5-00CF-4F04-8488-AA00236830DD}

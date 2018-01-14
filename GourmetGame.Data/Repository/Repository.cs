@@ -10,10 +10,10 @@ namespace GourmetGame.Data.Repository
     {
 
         private readonly ICollection<T> _dbSet;
-
+        private readonly IGourmetGameDb db;
         public Repository()
         {
-            var db = ServiceLocator.Current.GetInstance<IDatabaseManager>().GetInstance();
+            db = ServiceLocator.Current.GetInstance<IGourmetGameDb>();
             _dbSet = db.Collection<T>();
         }
 
