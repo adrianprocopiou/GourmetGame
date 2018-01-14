@@ -9,5 +9,10 @@ namespace GourmetGame.Domain.Service
         public DishService(IDishRepository dishRepository) : base(dishRepository)
         {
         }
+
+        public override void Add(Dish obj)
+        {
+            base.Add(obj);
+        }
     }
 }

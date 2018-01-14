@@ -89,6 +89,9 @@
             this.Controls.Add(this.buttonOk);
             this.Controls.Add(this.groupBoxIntroduction);
             this.Controls.Add(this.groupBoxLanguage);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "MainForm";
             this.groupBoxLanguage.ResumeLayout(false);
             this.groupBoxLanguage.PerformLayout();

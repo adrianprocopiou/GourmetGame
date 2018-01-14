@@ -1,4 +1,6 @@
-﻿namespace GourmetGame.Domain.Entities
+﻿using System;
+
+namespace GourmetGame.Domain.Entities
 {
     public class Dish : Entity
     {

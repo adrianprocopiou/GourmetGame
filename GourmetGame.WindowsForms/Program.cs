@@ -17,7 +17,7 @@ namespace GourmetGame.WindowsForms
         private static void Main()
         {
             _container = IoCManager.GetContainer();
-            _container.Register<MainForm>();
+            IoC.IoCManager.RegisterModules(_container);
 
             AutoMapperConfig.RegisterMapping();
 
