@@ -16,5 +16,22 @@ namespace GourmetGame.WindowsForms
         {
             InitializeComponent();
         }
+
+        private void buttonOk_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void radioButtonEnglish_CheckedChanged(object sender, EventArgs e)
+        {
+            LanguageService.SetCulture(AvailableCulture.English);
+            LanguageService.UpdateFormWithCurrentCulture(this);
+        }
+
+        private void radioButtonPortuguese_CheckedChanged(object sender, EventArgs e)
+        {
+            LanguageService.SetCulture(AvailableCulture.Portuguese);
+            LanguageService.UpdateFormWithCurrentCulture(this);
+        }
     }
 }

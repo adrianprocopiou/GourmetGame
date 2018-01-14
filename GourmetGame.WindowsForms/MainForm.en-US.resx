@@ -134,13 +134,13 @@
     <value>Language</value>
   </data>
   <data name="labelIntroduction.Location" type="System.Drawing.Point, System.Drawing">
-    <value>48, 28</value>
+    <value>30, 27</value>
   </data>
   <data name="labelIntroduction.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 13</value>
+    <value>187, 13</value>
   </data>
   <data name="labelIntroduction.Text" xml:space="preserve">
-    <value>Think of a food you like</value>
+    <value>Think about a dish that you like</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Gourmet Game</value>

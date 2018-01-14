@@ -117,118 +117,58 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="radioButtonEnglish.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="radioButtonEnglish.Location" type="System.Drawing.Point, System.Drawing">
-    <value>98, 19</value>
-  </data>
-  <data name="radioButtonEnglish.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 17</value>
-  </data>
-  <data name="radioButtonEnglish.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="radioButtonEnglish.Text" xml:space="preserve">
-    <value>Inglês</value>
-  </data>
-  <data name="&gt;&gt;radioButtonEnglish.Name" xml:space="preserve">
-    <value>radioButtonEnglish</value>
+  <data name="groupBoxLanguage.Text" xml:space="preserve">
+    <value>Idioma</value>
   </data>
   <data name="&gt;&gt;radioButtonEnglish.Type" xml:space="preserve">
     <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="buttonOk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 137</value>
+  </data>
+  <data name="&gt;&gt;radioButtonEnglish.Name" xml:space="preserve">
+    <value>radioButtonEnglish</value>
+  </data>
+  <data name="&gt;&gt;groupBoxIntroduction.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonOk.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;radioButtonEnglish.Parent" xml:space="preserve">
     <value>groupBoxLanguage</value>
   </data>
-  <data name="&gt;&gt;radioButtonEnglish.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="radioButtonPortuguese.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="radioButtonPortuguese.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 20</value>
-  </data>
-  <data name="radioButtonPortuguese.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 17</value>
-  </data>
-  <data name="radioButtonPortuguese.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="radioButtonPortuguese.Text" xml:space="preserve">
-    <value>Português</value>
-  </data>
-  <data name="&gt;&gt;radioButtonPortuguese.Name" xml:space="preserve">
-    <value>radioButtonPortuguese</value>
-  </data>
-  <data name="&gt;&gt;radioButtonPortuguese.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;radioButtonPortuguese.Parent" xml:space="preserve">
-    <value>groupBoxLanguage</value>
-  </data>
-  <data name="&gt;&gt;radioButtonPortuguese.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="groupBoxLanguage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 13</value>
-  </data>
-  <data name="groupBoxLanguage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>246, 48</value>
-  </data>
-  <data name="groupBoxLanguage.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="groupBoxLanguage.Text" xml:space="preserve">
-    <value>Idioma</value>
-  </data>
-  <data name="&gt;&gt;groupBoxLanguage.Name" xml:space="preserve">
-    <value>groupBoxLanguage</value>
-  </data>
-  <data name="&gt;&gt;groupBoxLanguage.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxLanguage.Parent" xml:space="preserve">
+  <data name="&gt;&gt;groupBoxIntroduction.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;groupBoxLanguage.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="buttonOk.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
   <data name="labelIntroduction.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="radioButtonEnglish.Text" xml:space="preserve">
+    <value>Inglês</value>
+  </data>
+  <data name="radioButtonPortuguese.Text" xml:space="preserve">
+    <value>Português</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="labelIntroduction.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
   </data>
-  <data name="labelIntroduction.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 29</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>270, 167</value>
   </data>
-  <data name="labelIntroduction.Size" type="System.Drawing.Size, System.Drawing">
-    <value>207, 13</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainForm</value>
   </data>
-  <data name="labelIntroduction.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="labelIntroduction.Text" xml:space="preserve">
-    <value>Pense em um prato que você gosta</value>
-  </data>
-  <data name="&gt;&gt;labelIntroduction.Name" xml:space="preserve">
-    <value>labelIntroduction</value>
-  </data>
-  <data name="&gt;&gt;labelIntroduction.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;labelIntroduction.Parent" xml:space="preserve">
-    <value>groupBoxIntroduction</value>
-  </data>
-  <data name="&gt;&gt;labelIntroduction.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="groupBoxIntroduction.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 67</value>
+  <data name="&gt;&gt;groupBoxLanguage.Name" xml:space="preserve">
+    <value>groupBoxLanguage</value>
   </data>
   <data name="groupBoxIntroduction.Size" type="System.Drawing.Size, System.Drawing">
     <value>246, 64</value>
@@ -236,58 +176,121 @@
   <data name="groupBoxIntroduction.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;groupBoxIntroduction.Name" xml:space="preserve">
+  <data name="groupBoxLanguage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>246, 48</value>
+  </data>
+  <data name="labelIntroduction.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 29</value>
+  </data>
+  <data name="&gt;&gt;labelIntroduction.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="radioButtonPortuguese.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 17</value>
+  </data>
+  <data name="&gt;&gt;labelIntroduction.Parent" xml:space="preserve">
     <value>groupBoxIntroduction</value>
-  </data>
-  <data name="&gt;&gt;groupBoxIntroduction.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBoxIntroduction.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBoxIntroduction.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="buttonOk.Location" type="System.Drawing.Point, System.Drawing">
-    <value>99, 137</value>
-  </data>
-  <data name="buttonOk.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="buttonOk.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="buttonOk.Text" xml:space="preserve">
-    <value>OK</value>
   </data>
   <data name="&gt;&gt;buttonOk.Name" xml:space="preserve">
     <value>buttonOk</value>
   </data>
-  <data name="&gt;&gt;buttonOk.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;radioButtonPortuguese.Parent" xml:space="preserve">
+    <value>groupBoxLanguage</value>
+  </data>
+  <data name="labelIntroduction.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 13</value>
+  </data>
+  <data name="&gt;&gt;groupBoxIntroduction.Name" xml:space="preserve">
+    <value>groupBoxIntroduction</value>
+  </data>
+  <data name="groupBoxLanguage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 13</value>
+  </data>
+  <data name="groupBoxIntroduction.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 67</value>
+  </data>
+  <data name="&gt;&gt;radioButtonEnglish.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelIntroduction.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;buttonOk.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="buttonOk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="radioButtonPortuguese.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 20</value>
+  </data>
   <data name="&gt;&gt;buttonOk.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <data name="radioButtonEnglish.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 19</value>
+  </data>
+  <data name="labelIntroduction.Text" xml:space="preserve">
+    <value>Pense em um prato que você gosta</value>
+  </data>
+  <data name="radioButtonEnglish.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </metadata>
+  </data>
+  <data name="&gt;&gt;groupBoxLanguage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxLanguage.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;radioButtonPortuguese.Name" xml:space="preserve">
+    <value>radioButtonPortuguese</value>
+  </data>
+  <data name="&gt;&gt;groupBoxIntroduction.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="buttonOk.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="&gt;&gt;labelIntroduction.Name" xml:space="preserve">
+    <value>labelIntroduction</value>
+  </data>
+  <data name="radioButtonEnglish.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;radioButtonPortuguese.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="radioButtonEnglish.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 17</value>
+  </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>270, 167</value>
+  <data name="&gt;&gt;radioButtonPortuguese.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;groupBoxLanguage.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="groupBoxLanguage.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="radioButtonPortuguese.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButtonPortuguese.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Jogo Gourmet</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>MainForm</value>
+  <data name="&gt;&gt;labelIntroduction.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>en-US</value>
+  </metadata>
 </root>

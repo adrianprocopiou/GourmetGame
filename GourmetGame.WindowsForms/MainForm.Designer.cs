@@ -41,9 +41,9 @@
             // 
             // groupBoxLanguage
             // 
+            resources.ApplyResources(this.groupBoxLanguage, "groupBoxLanguage");
             this.groupBoxLanguage.Controls.Add(this.radioButtonEnglish);
             this.groupBoxLanguage.Controls.Add(this.radioButtonPortuguese);
-            resources.ApplyResources(this.groupBoxLanguage, "groupBoxLanguage");
             this.groupBoxLanguage.Name = "groupBoxLanguage";
             this.groupBoxLanguage.TabStop = false;
             // 
@@ -52,6 +52,7 @@
             resources.ApplyResources(this.radioButtonEnglish, "radioButtonEnglish");
             this.radioButtonEnglish.Name = "radioButtonEnglish";
             this.radioButtonEnglish.UseVisualStyleBackColor = true;
+            this.radioButtonEnglish.CheckedChanged += new System.EventHandler(this.radioButtonEnglish_CheckedChanged);
             // 
             // radioButtonPortuguese
             // 
@@ -60,6 +61,7 @@
             this.radioButtonPortuguese.Name = "radioButtonPortuguese";
             this.radioButtonPortuguese.TabStop = true;
             this.radioButtonPortuguese.UseVisualStyleBackColor = true;
+            this.radioButtonPortuguese.CheckedChanged += new System.EventHandler(this.radioButtonPortuguese_CheckedChanged);
             // 
             // labelIntroduction
             // 
@@ -68,8 +70,8 @@
             // 
             // groupBoxIntroduction
             // 
-            this.groupBoxIntroduction.Controls.Add(this.labelIntroduction);
             resources.ApplyResources(this.groupBoxIntroduction, "groupBoxIntroduction");
+            this.groupBoxIntroduction.Controls.Add(this.labelIntroduction);
             this.groupBoxIntroduction.Name = "groupBoxIntroduction";
             this.groupBoxIntroduction.TabStop = false;
             // 
@@ -78,6 +80,7 @@
             resources.ApplyResources(this.buttonOk, "buttonOk");
             this.buttonOk.Name = "buttonOk";
             this.buttonOk.UseVisualStyleBackColor = true;
+            this.buttonOk.Click += new System.EventHandler(this.buttonOk_Click);
             // 
             // MainForm
             // 
