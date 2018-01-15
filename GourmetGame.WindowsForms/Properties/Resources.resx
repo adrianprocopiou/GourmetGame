@@ -117,11 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="CategoryUserInputCaption" xml:space="preserve">
+    <value>{0} é ________ mas {1} não</value>
+    <comment>0 é o nome do prato a ser criado e 1 é o nome do prato que está comparando</comment>
+  </data>
   <data name="CategoryUserMessage" xml:space="preserve">
     <value>O prato que você pensou é {0} ?</value>
     <comment>0 é o nome da categoria ou do prato</comment>
   </data>
-  <data name="DishUserImputCaption" xml:space="preserve">
+  <data name="DishUserInputCaption" xml:space="preserve">
     <value>Qual prato você pensou?</value>
   </data>
   <data name="SuccessUserMessage" xml:space="preserve">

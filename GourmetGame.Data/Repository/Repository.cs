@@ -11,7 +11,7 @@ namespace GourmetGame.Data.Repository
 {
     public class Repository<T> : IRepository<T> where T : Entity
     {
-        private readonly ICollection<T> _dbSet;
+        protected readonly IList<T> _dbSet;
         private readonly IGourmetGameDb db;
 
         public Repository()
@@ -20,12 +20,22 @@ namespace GourmetGame.Data.Repository
             _dbSet = db.Collection<T>();
         }
 
-        public void Add(T obj)
+        public virtual void Add(T obj)
         {
             _dbSet.Add(obj);
         }
 
-        public IEnumerable<T> GetAll()
+        public void Update(T obj)
+        {
+            var objDb = _dbSet.FirstOrDefault(x => x.Id == obj.Id);
+            if (objDb != null)
+            {
+                var indexOf = _dbSet.IndexOf(objDb);
+                _dbSet[indexOf] = obj;
+            }
+        }
+
+        public virtual IEnumerable<T> GetAll()
         {
             return _dbSet;
         }
@@ -33,6 +43,16 @@ namespace GourmetGame.Data.Repository
         public bool Any(Expression<Func<T, bool>> filter)
         {
             return _dbSet.AsQueryable().Any(filter);
+        }
+
+        public T FirsOrDefault(Expression<Func<T, bool>> filter)
+        {
+            return _dbSet.AsQueryable().FirstOrDefault(filter);
+        }
+
+        public IEnumerable<T> Where(Expression<Func<T, bool>> filter)
+        {
+            return _dbSet.AsQueryable().Where(filter);
         }
     }
 }

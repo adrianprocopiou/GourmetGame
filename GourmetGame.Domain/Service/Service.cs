@@ -21,6 +21,11 @@ namespace GourmetGame.Domain.Service
             _repository.Add(obj);
         }
 
+        public void Update(T obj)
+        {
+            _repository.Update(obj);
+        }
+
         public IEnumerable<T> GetAll()
         {
             return _repository.GetAll();
@@ -29,6 +34,16 @@ namespace GourmetGame.Domain.Service
         public bool Any(Expression<Func<T, bool>> filter)
         {
             return _repository.Any(filter);
+        }
+
+        public T FirsOrDefault(Expression<Func<T, bool>> filter)
+        {
+            return _repository.FirsOrDefault(filter);
+        }
+
+        public IEnumerable<T> Where(Expression<Func<T, bool>> filter)
+        {
+            return _repository.Where(filter);
         }
     }
 }

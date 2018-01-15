@@ -19,9 +19,6 @@ namespace GourmetGame.Data.IoC
 
             container.Register<ICategoryService, CategoryService>();
             container.Register<ICategoryRepository, CategoryRepository>();
-
-            container.Register<IDishService, DishService>();
-            container.Register<IDishRepository, DishRepository>();
         }
     }
 }

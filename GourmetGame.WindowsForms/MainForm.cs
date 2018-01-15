@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Windows.Forms;
-using GourmetGame.Application.ViewModel;
 using GourmetGame.WindowsForms.Service.Interface;
 
 namespace GourmetGame.WindowsForms
@@ -8,6 +7,7 @@ namespace GourmetGame.WindowsForms
     public partial class MainForm : Form
     {
         private readonly IMainFormService _service;
+
         public MainForm(IMainFormService service)
         {
             _service = service;

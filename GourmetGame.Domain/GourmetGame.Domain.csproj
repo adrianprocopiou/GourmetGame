@@ -45,12 +45,9 @@
     <Compile Include="Entities\Entity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\Interface\ICategoryRepository.cs" />
-    <Compile Include="Repository\Interface\IDishRepository.cs" />
     <Compile Include="Repository\Interface\IRepository.cs" />
     <Compile Include="Service\CategoryService.cs" />
-    <Compile Include="Service\DishService.cs" />
     <Compile Include="Service\Interfaces\ICategoryService.cs" />
-    <Compile Include="Service\Interfaces\IDishService.cs" />
     <Compile Include="Service\Interfaces\IService.cs" />
     <Compile Include="Service\Service.cs" />
   </ItemGroup>

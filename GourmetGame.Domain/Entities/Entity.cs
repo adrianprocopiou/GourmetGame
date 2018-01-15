@@ -6,7 +6,7 @@ namespace GourmetGame.Domain.Entities
     {
         public Entity()
         {
-            Id = new Guid();
+            Id = Guid.NewGuid();
         }
 
         public Guid Id { get; set; }

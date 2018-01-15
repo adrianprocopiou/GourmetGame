@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Windows.Forms;
 
 namespace GourmetGame.WindowsForms
 {
@@ -15,7 +16,13 @@ namespace GourmetGame.WindowsForms
         {
             textBoxInputUser.Text = string.Empty;
             labelMessage.Text = caption;
-            return this.ShowDialog() == DialogResult.OK? textBoxInputUser.Text : string.Empty;
+            return ShowDialog() == DialogResult.OK ? textBoxInputUser.Text : string.Empty;
+        }
+
+        protected override void OnShown(EventArgs e)
+        {
+            textBoxInputUser.Focus();
+            base.OnShown(e);
         }
     }
 }

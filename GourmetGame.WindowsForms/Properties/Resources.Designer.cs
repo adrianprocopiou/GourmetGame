@@ -61,6 +61,15 @@ namespace GourmetGame.WindowsForms.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {0} é ________ mas {1} não.
+        /// </summary>
+        internal static string CategoryUserInputCaption {
+            get {
+                return ResourceManager.GetString("CategoryUserInputCaption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to O prato que você pensou é {0} ?.
         /// </summary>
         internal static string CategoryUserMessage {
@@ -72,9 +81,9 @@ namespace GourmetGame.WindowsForms.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Qual prato você pensou?.
         /// </summary>
-        internal static string DishUserImputCaption {
+        internal static string DishUserInputCaption {
             get {
-                return ResourceManager.GetString("DishUserImputCaption", resourceCulture);
+                return ResourceManager.GetString("DishUserInputCaption", resourceCulture);
             }
         }
         

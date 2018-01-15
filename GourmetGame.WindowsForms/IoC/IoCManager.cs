@@ -11,7 +11,7 @@ namespace GourmetGame.WindowsForms.IoC
             container.Register<MainForm>();
             container.Register<InputDialogBox>();
 
-            container.Register<IMainFormService,MainFormService>();
+            container.Register<IMainFormService, MainFormService>();
             container.Register<IUserDisplayMessageService, UserDisplayMessageService>();
             container.Register<IInputDialogBox, InputDialogBox>();
         }

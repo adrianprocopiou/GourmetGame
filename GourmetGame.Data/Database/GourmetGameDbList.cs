@@ -11,68 +11,26 @@ namespace GourmetGame.Data.Database
         public GourmetGameDbList()
         {
             Category = new List<Category>();
-            Dish = new List<Dish>();
             PopulateWithSeedData();
         }
 
-        public ICollection<Category> Category { get; set; }
-        public ICollection<Dish> Dish { get; set; }
+        public IList<Category> Category { get; set; }
 
-        public ICollection<T> Collection<T>() where T : Entity
+        public IList<T> Collection<T>() where T : Entity
         {
             var typeT = typeof(T);
             var type = typeof(GourmetGameDbList);
             var property = type.GetProperties().FirstOrDefault(x => x.Name == typeT.Name);
             if (property == null)
                 throw new ArgumentException("Invalid Entity for the database");
-            return (ICollection<T>) property.GetValue(this);
+            return (IList<T>) property.GetValue(this);
         }
 
         private void PopulateWithSeedData()
         {
-            Category.Add(new Category
-                {
-                    Name = "massa",
-                    SubCategories = new List<Category>
-                    {
-                        new Category
-                        {
-                            Name = "Fria",
-                            Dish = new Dish
-                            {
-                                Name = "Sorvete"
-                            }
-                        }
-                    },
-                    Dish =
-                        new Dish
-                        {
-                            Name = "Lasanha"
-                        }
-                }
-            );
-
-            Category.Add(new Category
-                {
-                    Name = "salada",
-                    SubCategories = new List<Category>
-                    {
-                        new Category
-                        {
-                            Name = "vermelho",
-                            Dish = new Dish
-                            {
-                                Name = "Tomate"
-                            }
-                        }
-                    },
-                    Dish =
-                        new Dish
-                        {
-                            Name = "Alface"
-                        }
-                }
-            );
+            var categoryDefault = new Category {Id = Guid.NewGuid(), Name = "massa"};
+            categoryDefault.Dish = new Dish {CategoryId = categoryDefault.Id, Id = Guid.NewGuid(), Name = "Lasanha"};
+            Category.Add(categoryDefault);
         }
     }
 }

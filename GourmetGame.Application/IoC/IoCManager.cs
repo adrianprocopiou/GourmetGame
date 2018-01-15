@@ -12,8 +12,6 @@ namespace GourmetGame.Application.IoC
         {
             Container = container;
             container.Register<ICategoryAppService, CategoryAppService>();
-
-            container.Register<IDishAppService, DishAppService>();
         }
     }
 }

@@ -117,11 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="CategoryUserInputCaption" xml:space="preserve">
+    <value>{0} is ________ but {1} dont.</value>
+    <comment>0 is the dish name to be created and 1 is the dish name that compares</comment>
+  </data>
   <data name="CategoryUserMessage" xml:space="preserve">
     <value>The dish are you think is {0} ?</value>
     <comment>0 is the category or dish name</comment>
   </data>
-  <data name="DishUserImputCaption" xml:space="preserve">
+  <data name="DishUserInputCaption" xml:space="preserve">
     <value>What dish did you think?</value>
   </data>
   <data name="SuccessUserMessage" xml:space="preserve">

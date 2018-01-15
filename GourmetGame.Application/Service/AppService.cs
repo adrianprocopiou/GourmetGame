@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using AutoMapper;
 using GourmetGame.Application.Service.Interface;
 using GourmetGame.Domain.Entities;
@@ -22,8 +21,13 @@ namespace GourmetGame.Application.Service
         public void Add(TViewModel obj)
         {
             var entity = Mapper.Map<TEntity>(obj);
-            entity.Id = new Guid();
             _service.Add(entity);
+        }
+
+        public void Update(TViewModel obj)
+        {
+            var entity = Mapper.Map<TEntity>(obj);
+            _service.Update(entity);
         }
 
         public IEnumerable<TViewModel> GetAll()

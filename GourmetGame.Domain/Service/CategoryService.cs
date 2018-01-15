@@ -12,7 +12,9 @@ namespace GourmetGame.Domain.Service
 
         public override void Add(Category obj)
         {
-            if (!Any(x => x.Name == obj.Name))
+            if (!string.IsNullOrWhiteSpace(obj.Name)
+                && !string.IsNullOrWhiteSpace(obj?.Dish?.Name)
+                && !Any(x => x.Name == obj.Name))
                 base.Add(obj);
         }
     }

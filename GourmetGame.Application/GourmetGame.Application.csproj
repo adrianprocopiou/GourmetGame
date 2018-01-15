@@ -54,10 +54,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\AppService.cs" />
     <Compile Include="Service\CategoryAppService.cs" />
-    <Compile Include="Service\DishAppService.cs" />
     <Compile Include="Service\Interface\IAppService.cs" />
     <Compile Include="Service\Interface\ICategoryAppService.cs" />
-    <Compile Include="Service\Interface\IDishAppService.cs" />
     <Compile Include="ViewModel\CategoryViewModel.cs" />
     <Compile Include="ViewModel\DishViewModel.cs" />
   </ItemGroup>

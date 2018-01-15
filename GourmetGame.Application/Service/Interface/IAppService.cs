@@ -5,6 +5,7 @@ namespace GourmetGame.Application.Service.Interface
     public interface IAppService<TViewModel> where TViewModel : class
     {
         void Add(TViewModel obj);
+        void Update(TViewModel obj);
         IEnumerable<TViewModel> GetAll();
     }
 }
