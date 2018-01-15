@@ -2,6 +2,9 @@
 {
     public interface IMainFormService
     {
+        /// <summary>
+        /// Procces the game
+        /// </summary>
         void StartGame();
     }
 }
